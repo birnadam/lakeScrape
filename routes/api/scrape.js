@@ -1,7 +1,8 @@
 // Scrape function, not a route 
+"use strict";
+const db = require("../../models");
 const axios = require("axios");
 const cheerio = require("cheerio");
-const db = require("../../models");
 
 // Targetting Lakers Bleacher Report to scrape
 const lbrURL = "https://bleacherreport.com/los-angeles-lakers";
