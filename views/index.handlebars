@@ -1,0 +1,40 @@
+{{#if article}}
+{{#each article}}
+<div class="card border-secondary mb-2">
+    <div class="card-body">
+        <h5 class="card-title">{{headline}}</h5>
+        <img class="card-img-top float-left mr-3" src="{{imageURL}}" alt="Image Unavailable"
+            style="width: 20vw; float: left">
+        <p class="card-text mt-2">
+            {{summary}}
+            <br>
+            <div class="clearfix mr-3 float-right">
+                Click<a href="{{article.link}}" target="_blank" class="ml-2">here</a> to learn more.
+            </div>
+        </p>
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            <a href="/comment/{{_id}}">
+                <button type="button" class="btn btn-info float-right ml-1" style="font-size: 0.9em">
+                    Comment <span class="badge badge-light">{{comments.length}}</span>
+                </button>
+            </a>
+            <button type="button" class="btn btn-danger float-right mr-1 delete-article" article-id="{{_id}}"
+                style="font-size: 0.9em">Delete</button>
+        </small>
+    </div>
+</div>
+{{/each}}
+
+{{else}}
+<div class="mb-5">
+    <h4>
+        Articles have not loaded
+        <a class="btn btn-warning" href="/scrape" role="button" onClick="window.location.reload();">
+            Load Articles
+        </a>
+    </h4>
+    <p>(Press button 2x if it doesn't reload automatically)</p>
+</div>
+{{/if}}

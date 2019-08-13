@@ -1,7 +1,7 @@
 // Route for news article
 var express = require('express');
 var router = express.Router();
-const db = require("../models");
+const db = require("../../models");
 
 // GET /api/articles/test - go here to test if we get a response
 router.get("/test", (req, res) => {
