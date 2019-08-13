@@ -5,39 +5,39 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ArticleSchema = new Schema({
-  headline: {
-    type: String,
-    required: true
-  },
+    headline: {
+        type: String,
+        required: true
+    },
 
-  summary: {
-    type: String,
-    required: false
-  },
+    summary: {
+        type: String,
+        equired: false
+    },
 
-  link: {
-    type: String,
-    index: true,
-    unique: true,
-  },
+    link: {
+        type: String,
+        index: true,
+        unique: true,
+    },
 
-  imageURL: {
-    type: String,
-    required: false,
-    default: null,
-  },
+    imageURL: {
+        type: String,
+        required: false,
+        default: null,
+    },
 
-  // Time whne article is inserted
-  createdAt: {
-    type: Date,
-    default: Date.now
-  },
+    // Time whne article is inserted
+    createdAt: {
+        type: Date,
+        default: Date.now
+    },
 
-  // Array of comment IDs
-  comments: [{
-    type: Schema.Types.ObjectId,
-    ref: 'Comment'
-  }],
+    // Array of comment IDs
+    comments: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Comment'
+    }],
 });
 
 const Article = mongoose.model("Article", ArticleSchema);
