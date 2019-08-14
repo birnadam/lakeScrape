@@ -12,7 +12,7 @@ const ArticleSchema = new Schema({
 
     summary: {
         type: String,
-        equired: false
+        required: false
     },
 
     link: {
