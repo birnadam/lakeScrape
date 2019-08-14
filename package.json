@@ -1,8 +1,8 @@
 {
   "name": "lakeScrape",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "All the News That's Fit to Scrape",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -12,8 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/birnapwnsu/lakeScrape.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cheerio",
+    "express-handlebars",
+    "mongoose"
+  ],
+  "author": "Birna Dam",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/birnapwnsu/lakeScrape/issues"
