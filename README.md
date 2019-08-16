@@ -2,8 +2,8 @@
 
 ## What it is
 lakeScrape is an application that scrapes data from Lakers Bleacher Report and appends them on the page for the user. 
-<br>Aside from scraping the data for the user to view, the user can also leave comments on the respective article
-<br>and this will allow them to access the article easily again later, through the "commented" tab.  
+<br>Aside from scraping the data for the user to view, the user can also leave comments on an article
+<br>and this will allow them to access the article easily again later through the "commented" tab.  
 
 ## How it was made
 lakeScrape was created using **Express, Express-Handlebars, Mongoose, Cheerio, and Axios**. 
