@@ -24,7 +24,7 @@ Bootstrap and Handlebars were used to append the data onto the page in a meaning
 Visit the deployed site and view your Lakers news right away: https://laker-scraper.herokuapp.com/
 <br> 
 *OR*
-1. Clone this repository: https://github.com/birnapwnsu/lakeScrape.git
+1. Clone this repository: https://github.com/birnadam/lakeScrape.git
 2. Pull up console in the downloaded folder and type "npm init -y" to intialize your package.json
 3. Type in "npm install" to install all the proper modules
 4. Type "npm run server" to start up the application
